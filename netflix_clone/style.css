@@ -1,0 +1,296 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.container img {
+    width: 100%;
+    height: 50px;
+    alai
+    /* Defina uma altura fixa para as imagens */
+/*object-fit: cover;
+    /* Ajuste a imagem para preencher o espaço, cortando se necessário */
+/*border-radius: 5px;
+}*/
+
+.logo {
+    width: 100px;
+    /* Ajuste a largura da logo para um tamanho menor */
+    height: 100px;
+    /* Mantém a proporção da imagem */
+    margin-right: auto;
+    /* Adiciona margem à direita para empurrar o nav para a direita */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente os itens */
+    justify-content: space-between;
+    /* Adiciona espaço entre os itens da nav */
+    flex-grow: 1;
+    /* Permite que a nav ocupe o espaço disponível */
+}
+
+nav ul {
+    display: flex;
+    /* Exibe os itens do menu em linha */
+    list-style-type: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    /* Remove o padding da lista */
+    margin: 0;
+    /* Remove a margem da lista */
+}
+
+nav ul li {
+    margin-right: 20px;
+    /* Espaçamento entre os itens do menu */
+}
+
+.btn-login {
+    padding: 10px 20px;
+    /* Adiciona padding ao botão */
+    background-color: #e50914;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    border-radius: 5px;
+    /* Arredonda os cantos do botão */
+    transition: background-color 0.3s;
+    /* Efeito de transição para a cor de fundo */
+}
+
+.btn-login:hover {
+    background-color: #f40612;
+    /* Cor do botão ao passar o mouse */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-login {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin-right: 10px;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin-right: 10px;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: 225px;
+    /* Defina uma altura fixa para as imagens */
+    object-fit: cover;
+    /* Ajuste a imagem para preencher o espaço, cortando se necessário */
+    border-radius: 5px;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero form input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    margin-right: 10px;
+}
+
+.hero form button {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Content Sections */
+.content-section {
+    padding: 50px 0;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.credits {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #757575;
+}
+
+/* Credits and author comments */
+footer .credits::after {
+    content: " | Developed by Aloisio Langa";
+    font-size: 10px;
+    color: #757575;
+}
+
+/* Estilo para a caixa de entrada de e-mail */
+.email-input {
+    padding: 10px;
+    /* Adiciona padding à caixa de entrada */
+    border: 1px solid #ccc;
+    /* Cor da borda */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    width: 250px;
+    /* Largura da caixa de entrada */
+    margin-right: 10px;
+    /* Espaçamento à direita */
+}
+
+/* Estilo para o botão de enviar */
+.btn-submit {
+    padding: 10px 20px;
+    /* Adiciona padding ao botão */
+    background-color: #e50914;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    border-radius: 50px;
+    /* Arredondamento para um formato oval */
+    border: none;
+    /* Remove a borda padrão */
+    transition: background-color 0.3s;
+    /* Efeito de transição para a cor de fundo */
+    margin-top: 1%;
+
+}
+
+.btn-submit:hover {
+    background-color: #f40612;
+    /* Cor do botão ao passar o mouse */
+}
